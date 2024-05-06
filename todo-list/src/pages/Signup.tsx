@@ -37,7 +37,7 @@ function Signup() {
                 })
                 console.log(data)
                 if(data.code == 201){
-                    navigate('/mulearn-intern-todo/signin')
+                    navigate('/mulearn-intern-todo-api/signin')
                 }
                 
             } else {
@@ -82,7 +82,7 @@ function Signup() {
                     />
                 </div>
                 <button className="btn" type="submit">Sign up</button>
-                <span>Already have an account?<Link to="/mulearn-intern-todo/signin"> SIGN IN</Link></span>
+                <span>Already have an account?<Link to="/mulearn-intern-todo-api/signin"> SIGN IN</Link></span>
             </form>
         </div>
     );

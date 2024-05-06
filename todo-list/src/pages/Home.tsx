@@ -17,7 +17,7 @@ function Home() {
 
     useEffect(() => {
         if (!username) {
-            navigate('/mulearn-intern-todo/signin');
+            navigate('/mulearn-intern-todo-api/signin');
         }
     }, [navigate, username]);
 
@@ -116,7 +116,7 @@ function Home() {
             console.log(data);
             localStorage.removeItem('auth');
             localStorage.removeItem('loggedInUser');
-            navigate('/mulearn-intern-todo/signin');
+            navigate('/mulearn-intern-todo-api/signin');
         } catch (error) {
             console.error(error);
         }

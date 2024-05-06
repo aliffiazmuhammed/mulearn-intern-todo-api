@@ -33,7 +33,7 @@ function SignIn() {
             if(data.code == 200){
                 localStorage.setItem('loggedInUser',values.username);
                 localStorage.setItem('auth',data.access_token);
-                navigate('/mulearn-intern-todo/')
+                navigate('/mulearn-intern-todo-api/')
             }else{
                 alert("inavalid login")
             }
@@ -64,7 +64,7 @@ function SignIn() {
                     />
                 </div>
                 <button className="btn" type="submit">Sign in</button>
-                <span>Don't have an account?<Link to="/mulearn-intern-todo/signup"> REGISTER</Link></span>
+                <span>Don't have an account?<Link to="/mulearn-intern-todo-api/signup"> REGISTER</Link></span>
             </form>
         </div>
     );
